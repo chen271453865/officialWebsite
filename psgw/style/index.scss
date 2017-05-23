@@ -1,0 +1,468 @@
+@import 'predefined_variables';
+.head_top{
+	width:$width;
+	background:$bgimg;
+	height:$top_head;
+}
+.top_main{
+	width:$main_width;
+	height:$top_head;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	.top_left,.top_right{
+		@include floatLeft;
+		width:$ft;
+		display:$inlineBlock;
+		color:$white;
+		line-height:$top_head;
+	}
+	.top_right{
+		@include textPosition(right);
+		@include fontWeight;
+	}
+}
+ nav{
+	@include mg;
+	@include overFlow;
+	width:$main_width;
+	.logo{
+		@include wid(23%);
+		@include floatLeft;
+		margin:{
+			top:5px;
+			bottom:5px;
+		}
+	}
+	 ul{
+		@include wid(77%);
+		@include floatLeft;
+		@include height(91px);
+		@extend %textDerection;
+		display:$flex;
+	}
+	ul li {
+		@include flex1;
+		@extend %noList;
+		&:hover{
+			background:#005887;
+		}
+		&:hover a{
+			color:$white;
+		}
+		border:{
+			right:1px solid #DAD6D6;
+		}
+	}
+	ul li a{
+		@include wid(100%);
+		@include textPosition(center);
+		display:block;
+		padding-top:20px;
+		color:#909090;
+	}
+	/* ul li a span{
+		@include fontWeight;
+	} */
+	ul li a p{
+		font-size:12px;
+	}
+	a:-webkit-any-link{
+		@extend %textDerection;
+	}
+}
+.sangle{
+	@include textPosition(center);
+	@include san;
+}
+.banner{
+	margin:{
+		top:88px;
+	}
+}
+/* 服务范围开始 */
+.our_ser{
+	@include overFlow;
+	width:$main_width;
+	margin:{
+			top:40px;
+			bottom:0;
+			left:auto;
+			right:auto;
+		}
+	h2{
+		@include textPosition(center);
+		@include fontWeight;
+		width:$main_width;
+		line-height:40px;
+		color:$bgcolor;
+		padding-bottom:0;
+	}
+	p{
+		@include textPosition(center);
+		@include fontWeight;
+		color:#776D6D;
+		line-height:$top_head;
+	}
+}
+.h2_font{
+	@include overFlow;
+	width:$main_width;
+	@include textPosition(center);
+	line-height:$top_head;
+	/* .bg_tw_one,.bg_tw_two{
+		@include floatLeft;
+		@include height(20px);
+		width:40%;
+		background:red;
+		background:url(../imgs/wl.png) repeat-x;
+		background-size:cover;
+		margin:{
+			top:10px;
+		}
+	} */
+	h2{
+		/* @include floatLeft; */
+		width:20%;
+		margin:{
+			top:0;
+			right:auto;
+			bottom:0;
+			left:auto;
+		}
+	}
+}
+/* 4个形状开始 */
+.ellipse{
+	@include position(relative);
+	width:$main_width;
+	display:$flex;
+	margin:{
+		left:auto;
+		right:auto;
+		top:20px;
+		bottom:0;
+	}
+	.ellipse_fir,.ellipse_sec,.ellipse_third,.ellipse_fouth{
+		@include position(relative);
+		@include flex1;
+		@extend %borderRadius;
+		@include height(200px);
+		@extend .ellipse_fir;
+	}
+	.ellipse_sec,.ellipse_fouth{
+		margin:{
+			left:20px;
+		}
+	}
+	.ellipse_fir{
+		@include backgroundColor(#005888);
+		@include position(relative);
+		:hover{
+			.logo_img_fir {
+				transform:rotate(360deg);
+			}
+		}
+		a{
+			width:$width;
+			@include height(100%);
+			@include position(absolute);
+			background:url(../imgs/circle.png) center 21px no-repeat;
+			@extend %textDerection;
+			.logo_img{
+				@include wid(113px);
+				@include height(113px);
+				@include position(relative);
+				@include left(39%);
+				@include top(12%);
+				/* @include overFlow; */
+				.logo_img_fir{
+					background:url(../imgs/index_lindai.png) center 21px  no-repeat;
+					height:111px;
+					@include wid(111px);
+					@include floatLeft;
+					@extend %transition;
+				}
+			}
+			h3{
+				@include textPosition(center);
+				color:$white;
+				@include fontWeight;
+				font-size:16px;
+				margin:{
+					top:30px;
+				}
+				@extend %textDerection;
+			}
+			p{
+				@include textPosition(center);
+				color:$white;
+				font-size:10px;
+			}
+		}
+	}
+	.ellipse_sec{
+		@include backgroundColor(#FF4057);
+		.logo_img_fir{
+			background:url(../imgs/index_phone.png) center 21px  no-repeat !important;
+		}
+	}
+	.ellipse_third{
+		@include backgroundColor(#FF9E40);
+		.logo_img_fir{
+			background:url(../imgs/index_wechar.png) center 21px  no-repeat !important;
+		}
+	}
+	.ellipse_fouth{
+		@include backgroundColor(#75E65A);
+		.logo_img_fir{
+			background:url(../imgs/index_dingzhi.png) center 21px  no-repeat !important;
+		}
+	}
+}
+/* 案例介绍开始 */
+.cass_show{
+	width:$width;
+	@include overFlow;
+	@include backgroundColor(#F2F2F2);
+	margin:{
+		top:20px;
+	}
+}
+.case_content{
+	width:$main_width;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	ul{
+		width:$width;
+		display:$flex;
+		@include height(238px);
+		li{
+			@include flex1;
+			@include height(100%);
+			@include position(relative);
+			box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+			:hover{
+				.magnifier{
+					top:20px;
+					@include tranistion_delay(.35);
+				}
+				.mengceng{
+					@include height(100%);
+					@include wid(100%);
+					@include tranistion_delay(.35);
+				}
+				.content_title{
+					@include bottom(20px);
+					@include tranistion_delay(.35);
+				}
+			}
+			list-style:none;
+			a{
+
+				padding:{
+					top:5px;
+					right:5px;
+					bottom:5px;
+					left:5px;
+				}
+				@extend %borderRadius;
+				@include backgroundColor(#ffffff);
+				background-size:cover;
+				display:block;
+				@include overFlow;
+				@include position(relative);
+				@include wid(100%);
+				@include height(100%);
+				img{
+					width:100%;
+					height:100%;
+				}
+				.magnifier{
+					@include left(50%);
+					@include top(-60px);
+					@extend %transform_translate;
+					@extend %transition;
+					@include position(absolute);
+					z-index:3;
+					background:url(../imgs/magnifier.png) center no-repeat;
+					@include wid(64px);
+					@include height(64px);
+				}
+				.mengceng{
+					width:$width;
+					@include height(0);
+					@include position(absolute);
+					@include left(0);
+					@include top(0);
+					@include backgroundColor(#000000);
+					z-index:2;
+					@extend %copacity;
+					@extend %transition;
+				}
+				.content_title{
+					@include position(absolute);
+					@include bottom(-60px);
+					width:$width;
+					z-index:3;
+					@extend %transition;
+					h3{
+						font-size:20px;
+						color:#ffffff;
+						@include textPosition(center);
+					}
+					p{
+						color:#ffffff;
+						@include textPosition(center);
+					}
+				}
+			}
+		}
+		li:nth-of-type(2){
+			margin:{
+				top:0;
+				right:10px;
+				bottom:0;
+				left:10px;
+			}
+		}
+	}
+	ul:nth-of-type(2){
+		margin:{
+			top:20px;
+		}
+	}
+}
+/* 更多图标开始 */
+.more_icon{
+	/* @include wid(64px);
+	@include height(64px); */
+	@include textPosition(center);
+	width:$main_width;
+	text-align:center;
+	@include height(100px);
+	@include lineHeight(100px);
+	margin:{
+		top:0;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	img{
+		margin:{
+			top:18px;
+		}
+		cursor:pointer;
+	}
+}
+/* 我们的优势 */
+.advantage_all{
+	width:$main_width;
+	margin:{
+		top:0;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	ul{
+		width:$width;
+		display:$flex;
+		@include position(relative);
+		li{
+			@extend %noList;
+			@include textPosition(center);
+			@include flex1;
+			@include position(relative);
+			border:1px solid #F1F0F0;
+			@extend %borderRadius;
+			a{
+				width:$width;
+				display:block;
+				@include position(relative);
+				@include top(10px);
+				@extend %textDerection;
+				color:#cccccc;
+				padding:{
+					top:10px;
+					right:10px;
+					bottom:40px;
+					left:10px;
+				}
+				.msg_show{
+					@extend %textDerection;
+					p{
+						color:#776D6D;
+						@include fontWeight;
+						@include lineHeight(30px);
+					}
+				}
+				p{
+					color:#9E9C9C;
+				}
+			}
+			:hover {
+				@include top(0px);
+				@extend %transition;
+			}
+		}
+		li:nth-of-type(2),li:nth-of-type(3),li:nth-of-type(4){
+			margin:{
+				top:0;
+				right:0;
+				bottom:0;
+				left:10px;
+			}
+		}
+	}
+}
+/* bottom开始 */
+footer{
+	width:$width;
+	margin:{
+		top:20px;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	@include height(52px);
+	@include backgroundColor(#005888);
+	ul{
+		display:$flex;
+		width:$main_width;
+		@include height(100%);
+		@include textPosition(center);
+		@include lineHeight(50px);
+		margin:{
+			top:0;
+			right:auto;
+			bottom:0;
+			left:auto;
+		}
+		li{
+			@include flex1;
+			@extend %noList;
+			a{
+				@extend %textDerection;
+				color:#ffffff;
+				@include fontWeight;
+			}
+		}
+	}
+}
+/* 返回顶部 */
+.totop{
+	@include position(fixed);
+	right:0;
+	bottom:5%;
+	z-index:4;
+	cursor:pointer;
+	@include wid(64px);
+	@include height(64px);
+}

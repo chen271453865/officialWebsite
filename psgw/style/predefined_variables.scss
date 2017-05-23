@@ -1,0 +1,174 @@
+/* css预定义变量 ，用于后期维护*/
+$width:100%;
+$main_width:1000px;
+$top_head:40px;
+$white:#ffffff;
+$ft:50%;
+$fixed:fixed;
+$flex:flex;
+$left:0;
+$top:0;
+$inlineBlock:inline-block;
+$bgimg:url(../imgs/wenli_fir.png) repeat-x;
+$bgcolor:#005887;
+$spanFontColor:#535353;
+$pointer:pointer;
+%change_big{
+	transform:scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+	-moz-transform:scale(1.2,1.2);
+	-ms-transform:scale(1.2,1.2);
+	-o-transform:scale(1.2,1.2);
+}
+%outLineStyle{
+	outline-style:none;
+}
+%backgroundSizeCover{
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	-moz-background-size:cover;
+}
+%backgroundSizeContain{
+	background-size:contain;
+	-webkit-background-size:contain;
+	-o-background-size:contain;
+	-ms-background-size:contain;
+	-moz-background-size:contain;
+}
+%noList{
+	list-style:none;
+}
+%textDerection{
+	text-decoration: none;
+}
+@mixin lineHeight($lineHeight){
+	line-height:$lineHeight;
+}
+@mixin overFlow{
+	overflow:hidden;
+}
+@mixin left($left){
+	left:$left;
+}
+@mixin right($right){
+	right:$right;
+}
+@mixin bottom($bottom){
+	bottom:$bottom;
+}
+@mixin top($top){
+	top:$top;
+}
+@mixin backgroundColor($backgroundColor){
+	background:$backgroundColor;
+}
+@mixin floatLeft{
+	float:left;
+}
+@mixin floatRight{
+	float:right;
+}
+@mixin textPosition ($right){
+	text-align:$right;
+}
+@mixin fontWeight{
+	font-weight:bold;
+}
+@mixin mg{
+	margin:0 auto;
+}
+@mixin wid($width){
+	width:$width;
+}
+@mixin height($height){
+	height:$height;
+}
+@mixin bottom($bottom){
+	bottom:$bottom;
+}
+@mixin flex1{
+	flex:1;
+	-webkit-flex:1;
+	-moz-flex:1;
+	-ms-flex:1;
+	-o-flex:1;
+}
+@mixin san{
+	width:100%;
+	content: "";
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 10px solid transparent;
+	border-bottom-color: $white;
+	margin:0 auto;
+}
+@mixin position($position){
+	position:$position;
+}
+@mixin tranistion_delay($time){
+	/* 延迟操作 */
+	transition-duration: $time;
+	-moz-transition-duration: $time; /* Firefox 4 */
+	-webkit-transition-duration: $time; /* Safari 和 Chrome */
+	-o-transition-duration: $time; /* Opera */
+}
+%trans_rotate_left{
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); 	/* IE 9 */
+	-moz-transform:rotate(20deg); 	/* Firefox */
+	-webkit-transform:rotate(20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(20deg); 	/* Opera */
+}
+%trans_rotate_right{
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg); 	/* IE 9 */
+	-moz-transform:rotate(-3deg); 	/* Firefox */
+	-webkit-transform:rotate(-3deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-3deg); 	/* Opera */
+	color: transparent;
+	background:transparent;
+}
+%trans_skew_left{
+	transform:skewX(16deg) rotate(10deg);
+	-webkit-transform:skewX(16deg) rotate(10deg);
+	-ms-transform:skewX(16deg) rotate(10deg);
+	-o-transform:skewX(16deg) rotate(10deg);
+	-moz-transform:skewX(16deg) rotate(10deg);
+}
+%trans_skew_right{
+	transform:skewX(-16deg) rotate(-10deg);
+	-webkit-transform:skewX(-16deg) rotate(-10deg);
+	-ms-transform:skewX(-16deg) rotate(-10deg);
+	-o-transform:skewX(-16deg) rotate(-10deg);
+	-moz-transform:skewX(-16deg) rotate(-10deg);
+}
+%copacity{
+	opacity:0.3;
+	 filter:alpha(opacity=30);       /* IE */
+ 	-moz-opacity:0.3;              /* 老版Mozilla */
+ 	-khtml-opacity:0.3;              /* 老版Safari */
+	opacity: 0.3;           /* 支持opacity的浏览器*/
+}
+%transition{
+	transition:All 0.4s ease-in-out; 
+	-webkit-transition:All 0.4s ease-in-out;   
+	-moz-transition:All 0.4s ease-in-out;   
+	-o-transition:All 0.4s ease-in-out;
+}
+%borderRadius {
+	border-raidus:5px;
+	-webkit-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+}
+%transform_translate{
+	transform:translate(-50%,0);
+	-webkit-transform:translate(-50%,0);
+	-moz-transform:translate(-50%,0);
+	-ms-transform:translate(-50%,0);
+	-o-transform:translate(-50%,0);
+}

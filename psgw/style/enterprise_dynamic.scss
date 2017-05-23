@@ -1,0 +1,78 @@
+@import 'index';
+@import 'predefined_variables.scss';
+/* 企业动态 */
+.enterprise_dynamic{
+	width:$main_width;
+	margin:{
+		top:40px;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	h3{
+		@include fontWeight;
+		color:#000000;
+		@include lineHeight(40px);
+	}
+	.company_content{
+		color:#848484;
+	}
+}
+.other_msg{
+		width:$main_width;
+		@include overFlow;
+		margin:{
+			top:40px;
+			right:auto;
+			bottom:0;
+			left:auto;
+		}
+		ul{
+			display:$flex;
+			li{
+				@include flex1;
+				/* @include textPosition(center); */
+				@extend %noList;
+				color:#848484;
+				p:nth-of-type(1){
+					@include fontWeight;
+					color:#848484;
+				}
+				a{
+					@extend %textDerection;
+					color:#848484;
+				}
+			}
+		}
+	}
+/* 企业介绍开始 */
+.company_introduce{
+	width:$main_width;
+	@include overFlow;
+		margin:{
+			top:40px;
+			right:auto;
+			bottom:0;
+			left:auto;
+		}
+		.introduce_msg{
+			@include wid(70%);
+			@include overFlow;
+			@include floatLeft;
+			h3{
+				@include fontWeight;
+				color:#000000;
+				@include lineHeight(30px);
+			}
+			.content{
+				@include overFlow;
+				color:#848484;
+			}
+		}
+		.introduce_img{
+			@include textPosition(center);
+			@include overFlow;
+			@include floatLeft;
+			@include wid(30%);
+		}
+}

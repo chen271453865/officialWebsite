@@ -1,0 +1,217 @@
+@import 'index';
+@import 'predefined_variables';
+body{
+	@include backgroundColor(#F6F6F6);
+}
+.head_top{
+	width:$width;
+	background:$bgimg;
+	height:$top_head;
+}
+.top_main{
+	width:$main_width;
+	height:$top_head;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	.top_left,.top_right{
+		@include floatLeft;
+		width:$ft;
+		display:$inlineBlock;
+		color:$white;
+		line-height:$top_head;
+	}
+	.top_right{
+		@include textPosition(right);
+		@include fontWeight;
+	}
+}
+ nav{
+	@include mg;
+	@include overFlow;
+	width:$main_width;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	.logo{
+		@include wid(23%);
+		@include floatLeft;
+		margin:{
+			top:5px;
+			bottom:5px;
+		}
+	}
+	 ul{
+		@include wid(77%);
+		@include floatLeft;
+		@include height(91px);
+		@extend %textDerection;
+		display:$flex;
+	}
+	ul li {
+		@include flex1;
+		@extend %noList;
+		&:hover{
+			background:#005887;
+		}
+		&:hover a{
+			color:$white;
+		}
+		border:{
+			right:1px solid #DAD6D6;
+		}
+	}
+	ul li a{
+		@include wid(100%);
+		@include textPosition(center);
+		display:block;
+		padding-top:20px;
+		color:#909090;
+	}
+	/* ul li a span{
+		@include fontWeight;
+	} */
+	ul li a p{
+		font-size:12px;
+	}
+	a:-webkit-any-link{
+		@extend %textDerection;
+	}
+}
+.sangle{
+	@include textPosition(center);
+	@include san;
+}
+.banner{
+	width:$width;
+	margin:{
+		top:88px;
+	}
+}
+/* 定制网站4个按钮 */
+.custom_buttons{
+	width:$main_width;
+	@include textPosition(center);
+	@extend %borderRadius;
+	margin:{
+		top:40px;
+	}
+	/* padding:{
+		top:10px;
+		right:10px;
+		bottom:10px;
+		left:10px;
+	} */
+	margin:{
+		top:0;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	ul{
+		display:$flex;
+		li{
+			@include backgroundColor(#ffffff);
+			height:280px;
+			@include flex1;
+			@include position(relative);
+			cursor:$pointer;
+			border:1px solid #f1f1f1;
+			box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+			margin:{
+				top:0;
+				right:auto;
+				bottom:0;
+				left:10px;
+			}
+			padding:{
+				top:20px;
+				right:10px;
+				bottom:20px;
+				left:10px;
+			}
+			a{
+				@extend %textDerection;
+				@include position(relative);
+				width:$width;
+				display:block;
+				color:$spanFontColor;
+				.img_position{
+					@include position(absolute);
+					@include top(10px);
+					@include left(50%);
+					@extend %transform_translate;
+					@extend %transition;
+				}
+				p{
+					@include position(absolute);
+					@include top(180px);
+				}
+			}
+		}
+		:hover{
+			.img_position{
+				@include top(-10px);
+			}
+		}
+		li:nth-of-type(1){
+			margin:{
+				left:0;
+			}
+		}
+	}
+}
+/* 定制网站流程开始 */
+.process{
+	@include position(relative);
+	width:$main_width;
+	@include textPosition(center);
+	margin:{
+		top:40px;
+		right:auto;
+		bottom:0;
+		left:auto;
+	}
+	.process_fir{
+		@include height(174px);
+	}
+	.process_sec{
+		@include wid(242px);
+		@include height(280px);
+		display:$inlineBlock;
+		float:left;
+		@extend %borderRadius;
+		margin:{
+			top:0;
+			right:0;
+			bottom:0;
+			left:40px;
+		}
+		z-index:2;
+		border:1px solid #ccc;
+		box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+		@include backgroundColor(#ffffff);
+		padding:{
+			top:10px;
+			right:5px;
+			bottom:10px;
+			left:5px;
+		}
+	}
+	.process_thi{
+		@extend .process_sec;
+		float:right;
+		margin:{
+			top:0;
+			right:40px;
+			bottom:0;
+			left:0;
+		}
+	}
+}

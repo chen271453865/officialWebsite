@@ -1,0 +1,206 @@
+@import 'index';
+@import 'predefined_variables';
+.head_top{
+	width:$width;
+	background:$bgimg;
+	height:$top_head;
+}
+.top_main{
+	width:$main_width;
+	height:$top_head;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	.top_left,.top_right{
+		@include floatLeft;
+		width:$ft;
+		display:$inlineBlock;
+		color:$white;
+		line-height:$top_head;
+	}
+	.top_right{
+		@include textPosition(right);
+		@include fontWeight;
+	}
+}
+ nav{
+	@include mg;
+	@include overFlow;
+	width:$main_width;
+	margin:{
+		top:0;
+		bottom:0;
+		left:auto;
+		right:auto;
+	}
+	.logo{
+		@include wid(23%);
+		@include floatLeft;
+		margin:{
+			top:5px;
+			bottom:5px;
+		}
+	}
+	 ul{
+		@include wid(77%);
+		@include floatLeft;
+		@include height(91px);
+		@extend %textDerection;
+		display:$flex;
+	}
+	ul li {
+		@include flex1;
+		@extend %noList;
+		&:hover{
+			background:#005887;
+		}
+		&:hover a{
+			color:$white;
+		}
+		border:{
+			right:1px solid #DAD6D6;
+		}
+	}
+	ul li a{
+		@include wid(100%);
+		@include textPosition(center);
+		display:block;
+		padding-top:20px;
+		color:#909090;
+	}
+	/* ul li a span{
+		@include fontWeight;
+	} */
+	ul li a p{
+		font-size:12px;
+	}
+	a:-webkit-any-link{
+		@extend %textDerection;
+	}
+}
+.sangle{
+	@include textPosition(center);
+	@include san;
+}
+/* slide2背景图片开始 */
+.slide_bg_img{
+	width:$width;
+	@extend %backgroundSizeCover;
+	@include height(237px);
+	margin:{
+		top:91px;
+	}
+	img{
+		@include wid(100%);
+		@include height(100%);
+	}
+}
+/* 公司地主展示开始 */
+.company_msg{
+	width:$main_width;
+	@include overFlow;
+	margin:{
+			top:0;
+			right:auto;
+			bottom:0;
+			left:auto;
+		}
+	.company_map{
+		@include wid(700px);
+		@include floatRight;
+		iframe{
+			@include wid(100%);
+			@include height(337px);
+		}
+	}
+	/* 公司信息介绍开始 */
+	.company_introduce{
+		@include wid(300px);
+		@include floatLeft;
+		p:nth-of-type(1){
+			button{
+				@include lineHeight(34px);
+				margin:{
+					top:45px;
+					bottom:0;
+					right:auto;
+					left:auto;
+				}
+				padding:{
+					top:5px;
+					right:20px;
+					bottom:5px;
+					left:20px;
+				}
+				@include backgroundColor(#005887);
+				color:#ffffff;
+				@include fontWeight;
+				@extend %outLineStyle;
+				border:0;
+				@extend %borderRadius;
+			}
+		}
+		p{
+			color:#848484;
+			@include lineHeight(30px);
+			font-family: Verdana;
+		}
+		p:nth-of-type(2){
+			margin:{
+				top:15px;
+			}
+		}
+	}
+}
+/* 留言开始 */
+.liuyan{
+	width:$main_width;
+	margin:{
+		top:0;
+		right:auto;
+		bottom:20px;
+		left:auto;
+	}
+	form{
+		width:$width;
+		p{
+			display:$flex;
+			@include lineHeight(30px);
+			margin:{
+				top:20px;
+				right:auto;
+				bottom:0;
+				left:auto;
+			}
+			input{
+				@include flex1;
+				@include lineHeight(30px);
+				@extend %borderRadius;
+				border: 1px solid #ccc;
+			}
+			input:nth-of-type(2){
+				margin:{
+					top:0;
+					right:10px;
+					bottom:0;
+					left:10px;
+				}
+			}
+			textarea{
+				display:flex;
+				width:$width;
+				border: 1px solid #ccc;
+			}
+			#sub{
+				@include backgroundColor(#005887);
+				color:#ffffff;
+				border:0;
+				cursor:pointer;
+			}
+		}
+	}
+}
+

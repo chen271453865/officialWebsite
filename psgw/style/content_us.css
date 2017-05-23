@@ -1,0 +1,794 @@
+@charset "UTF-8";
+/* css预定义变量 ，用于后期维护*/
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000323}}
+.company_msg .company_introduce p:nth-of-type(1) button {
+  outline-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000326}}
+.slide_bg_img {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000340}}
+nav ul li, .advantage_all ul li, footer ul li {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000343}}
+nav ul, nav a:-webkit-any-link, .ellipse .ellipse_fir a, .ellipse .ellipse_sec a, .ellipse .ellipse_third a, .ellipse .ellipse_fouth a, .ellipse .ellipse_fir a h3, .ellipse .ellipse_sec a h3, .ellipse .ellipse_third a h3, .ellipse .ellipse_fouth a h3, .advantage_all ul li a, .advantage_all ul li a .msg_show, footer ul li a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003148}}
+.case_content ul li a .mengceng {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  /* IE */
+  -moz-opacity: 0.3;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.3;
+  /* 老版Safari */
+  opacity: 0.3
+  /* 支持opacity的浏览器*/ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003155}}
+.ellipse .ellipse_fir a .logo_img .logo_img_fir, .ellipse .ellipse_sec a .logo_img .logo_img_fir, .ellipse .ellipse_third a .logo_img .logo_img_fir, .ellipse .ellipse_fouth a .logo_img .logo_img_fir, .case_content ul li a .magnifier, .case_content ul li a .mengceng, .case_content ul li a .content_title, .advantage_all ul li :hover {
+  transition: All 0.4s ease-in-out;
+  -webkit-transition: All 0.4s ease-in-out;
+  -moz-transition: All 0.4s ease-in-out;
+  -o-transition: All 0.4s ease-in-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003161}}
+.ellipse .ellipse_fir, .ellipse .ellipse_sec, .ellipse .ellipse_third, .ellipse .ellipse_fouth, .case_content ul li a, .advantage_all ul li, .company_msg .company_introduce p:nth-of-type(1) button, .liuyan form p input {
+  border-raidus: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003168}}
+.case_content ul li a .magnifier {
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\000032}}
+.head_top {
+  width: 100%;
+  background: url(../imgs/wenli_fir.png) repeat-x;
+  height: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\000037}}
+.top_main {
+  width: 1000px;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000316}}
+  .top_main .top_left, .top_main .top_right {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000323}}
+  .top_main .top_right {
+    text-align: right;
+    font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000328}}
+nav {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1000px
+  /* ul li a span{
+  	@include fontWeight;
+  } */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000332}}
+  nav .logo {
+    width: 23%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000340}}
+  nav ul {
+    width: 77%;
+    float: left;
+    height: 91px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000347}}
+  nav ul li {
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    border-right: 1px solid #DAD6D6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000350}}
+    nav ul li:hover {
+      background: #005887; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000353}}
+    nav ul li:hover a {
+      color: #ffffff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000360}}
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    color: #909090; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000370}}
+  nav ul li a p {
+    font-size: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000377}}
+.sangle {
+  text-align: center;
+  width: 100%;
+  content: "";
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 10px solid transparent;
+  border-bottom-color: #ffffff;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000381}}
+.banner {
+  margin-top: 88px; }
+
+/* 服务范围开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000387}}
+.our_ser {
+  overflow: hidden;
+  width: 1000px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\0000396}}
+  .our_ser h2 {
+    text-align: center;
+    font-weight: bold;
+    width: 1000px;
+    line-height: 40px;
+    color: #005887;
+    padding-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003104}}
+  .our_ser p {
+    text-align: center;
+    font-weight: bold;
+    color: #776D6D;
+    line-height: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003111}}
+.h2_font {
+  overflow: hidden;
+  width: 1000px;
+  text-align: center;
+  line-height: 40px
+  /* .bg_tw_one,.bg_tw_two{
+  	@include floatLeft;
+  	@include height(20px);
+  	width:40%;
+  	background:red;
+  	background:url(../imgs/wl.png) repeat-x;
+  	background-size:cover;
+  	margin:{
+  		top:10px;
+  	}
+  } */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003127}}
+  .h2_font h2 {
+    /* @include floatLeft; */
+    width: 20%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; }
+
+/* 4个形状开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003139}}
+.ellipse {
+  position: relative;
+  width: 1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003149}}
+  .ellipse .ellipse_fir, .ellipse .ellipse_sec, .ellipse .ellipse_third, .ellipse .ellipse_fouth, .ellipse .ellipse_sec, .ellipse .ellipse_third, .ellipse .ellipse_fouth {
+    position: relative;
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003156}}
+  .ellipse .ellipse_sec, .ellipse .ellipse_fouth {
+    margin-left: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003161}}
+  .ellipse .ellipse_fir, .ellipse .ellipse_sec, .ellipse .ellipse_third, .ellipse .ellipse_fouth {
+    background: #005888;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003165}}
+    .ellipse .ellipse_fir :hover .logo_img_fir, .ellipse .ellipse_sec :hover .logo_img_fir, .ellipse .ellipse_third :hover .logo_img_fir, .ellipse .ellipse_fouth :hover .logo_img_fir {
+      -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+              transform: rotate(360deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003169}}
+    .ellipse .ellipse_fir a, .ellipse .ellipse_sec a, .ellipse .ellipse_third a, .ellipse .ellipse_fouth a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url(../imgs/circle.png) center 21px no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003175}}
+      .ellipse .ellipse_fir a .logo_img, .ellipse .ellipse_sec a .logo_img, .ellipse .ellipse_third a .logo_img, .ellipse .ellipse_fouth a .logo_img {
+        width: 113px;
+        height: 113px;
+        position: relative;
+        left: 39%;
+        top: 12%
+        /* @include overFlow; */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003182}}
+        .ellipse .ellipse_fir a .logo_img .logo_img_fir, .ellipse .ellipse_sec a .logo_img .logo_img_fir, .ellipse .ellipse_third a .logo_img .logo_img_fir, .ellipse .ellipse_fouth a .logo_img .logo_img_fir {
+          background: url(../imgs/index_lindai.png) center 21px no-repeat;
+          height: 111px;
+          width: 111px;
+          float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003190}}
+      .ellipse .ellipse_fir a h3, .ellipse .ellipse_sec a h3, .ellipse .ellipse_third a h3, .ellipse .ellipse_fouth a h3 {
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003200}}
+      .ellipse .ellipse_fir a p, .ellipse .ellipse_sec a p, .ellipse .ellipse_third a p, .ellipse .ellipse_fouth a p {
+        text-align: center;
+        color: #ffffff;
+        font-size: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003207}}
+  .ellipse .ellipse_sec {
+    background: #FF4057; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003209}}
+    .ellipse .ellipse_sec .logo_img_fir {
+      background: url(../imgs/index_phone.png) center 21px no-repeat !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003213}}
+  .ellipse .ellipse_third {
+    background: #FF9E40; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003215}}
+    .ellipse .ellipse_third .logo_img_fir {
+      background: url(../imgs/index_wechar.png) center 21px no-repeat !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003219}}
+  .ellipse .ellipse_fouth {
+    background: #75E65A; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003221}}
+    .ellipse .ellipse_fouth .logo_img_fir {
+      background: url(../imgs/index_dingzhi.png) center 21px no-repeat !important; }
+
+/* 案例介绍开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003227}}
+.cass_show {
+  width: 100%;
+  overflow: hidden;
+  background: #F2F2F2;
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003235}}
+.case_content {
+  width: 1000px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003243}}
+  .case_content ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 238px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003247}}
+    .case_content ul li {
+      -webkit-box-flex: 1;
+              flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      -o-flex: 1;
+      height: 100%;
+      position: relative;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003253}}
+      .case_content ul li :hover .magnifier {
+        top: 20px;
+        /* 延迟操作 */
+        transition-duration: 0.35;
+        -moz-transition-duration: 0.35;
+        /* Firefox 4 */
+        -webkit-transition-duration: 0.35;
+        /* Safari 和 Chrome */
+        -o-transition-duration: 0.35
+        /* Opera */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003257}}
+      .case_content ul li :hover .mengceng {
+        height: 100%;
+        width: 100%;
+        /* 延迟操作 */
+        transition-duration: 0.35;
+        -moz-transition-duration: 0.35;
+        /* Firefox 4 */
+        -webkit-transition-duration: 0.35;
+        /* Safari 和 Chrome */
+        -o-transition-duration: 0.35
+        /* Opera */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003262}}
+      .case_content ul li :hover .content_title {
+        bottom: 20px;
+        /* 延迟操作 */
+        transition-duration: 0.35;
+        -moz-transition-duration: 0.35;
+        /* Firefox 4 */
+        -webkit-transition-duration: 0.35;
+        /* Safari 和 Chrome */
+        -o-transition-duration: 0.35
+        /* Opera */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003268}}
+      .case_content ul li a {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        background: #ffffff;
+        background-size: cover;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003284}}
+        .case_content ul li a img {
+          width: 100%;
+          height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003288}}
+        .case_content ul li a .magnifier {
+          left: 50%;
+          top: -60px;
+          position: absolute;
+          z-index: 3;
+          background: url(../imgs/magnifier.png) center no-repeat;
+          width: 64px;
+          height: 64px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003299}}
+        .case_content ul li a .mengceng {
+          width: 100%;
+          height: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #000000;
+          z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003310}}
+        .case_content ul li a .content_title {
+          position: absolute;
+          bottom: -60px;
+          width: 100%;
+          z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003316}}
+          .case_content ul li a .content_title h3 {
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003321}}
+          .case_content ul li a .content_title p {
+            color: #ffffff;
+            text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003328}}
+    .case_content ul li:nth-of-type(2) {
+      margin-top: 0;
+      margin-right: 10px;
+      margin-bottom: 0;
+      margin-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003337}}
+  .case_content ul:nth-of-type(2) {
+    margin-top: 20px; }
+
+/* 更多图标开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003344}}
+.more_icon {
+  /* @include wid(64px);
+  @include height(64px); */
+  text-align: center;
+  width: 1000px;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003358}}
+  .more_icon img {
+    margin-top: 18px;
+    cursor: pointer; }
+
+/* 我们的优势 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003366}}
+.advantage_all {
+  width: 1000px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003374}}
+  .advantage_all ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003378}}
+    .advantage_all ul li {
+      text-align: center;
+      -webkit-box-flex: 1;
+              flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      -o-flex: 1;
+      position: relative;
+      border: 1px solid #F1F0F0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003385}}
+      .advantage_all ul li a {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 10px;
+        color: #cccccc;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003400}}
+        .advantage_all ul li a .msg_show p {
+          color: #776D6D;
+          font-weight: bold;
+          line-height: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003406}}
+        .advantage_all ul li a p {
+          color: #9E9C9C; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003410}}
+      .advantage_all ul li :hover {
+        top: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003415}}
+    .advantage_all ul li:nth-of-type(2), .advantage_all ul li:nth-of-type(3), .advantage_all ul li:nth-of-type(4) {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 10px; }
+
+/* bottom开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003426}}
+footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  height: 52px;
+  background: #005888; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003436}}
+  footer ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003448}}
+    footer ul li {
+      -webkit-box-flex: 1;
+              flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      -o-flex: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003451}}
+      footer ul li a {
+        color: #ffffff;
+        font-weight: bold; }
+
+/* 返回顶部 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/index\.scss}line{font-family:\00003460}}
+.totop {
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  z-index: 4;
+  cursor: pointer;
+  width: 64px;
+  height: 64px; }
+
+/* css预定义变量 ，用于后期维护*/
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000323}}
+.company_msg .company_introduce p:nth-of-type(1) button {
+  outline-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000326}}
+.slide_bg_img {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000340}}
+nav ul li, .advantage_all ul li, footer ul li {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\0000343}}
+nav ul, nav a:-webkit-any-link, .ellipse .ellipse_fir a, .ellipse .ellipse_sec a, .ellipse .ellipse_third a, .ellipse .ellipse_fouth a, .ellipse .ellipse_fir a h3, .ellipse .ellipse_sec a h3, .ellipse .ellipse_third a h3, .ellipse .ellipse_fouth a h3, .advantage_all ul li a, .advantage_all ul li a .msg_show, footer ul li a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003148}}
+.case_content ul li a .mengceng {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  /* IE */
+  -moz-opacity: 0.3;
+  /* 老版Mozilla */
+  -khtml-opacity: 0.3;
+  /* 老版Safari */
+  opacity: 0.3
+  /* 支持opacity的浏览器*/ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003155}}
+.ellipse .ellipse_fir a .logo_img .logo_img_fir, .ellipse .ellipse_sec a .logo_img .logo_img_fir, .ellipse .ellipse_third a .logo_img .logo_img_fir, .ellipse .ellipse_fouth a .logo_img .logo_img_fir, .case_content ul li a .magnifier, .case_content ul li a .mengceng, .case_content ul li a .content_title, .advantage_all ul li :hover {
+  transition: All 0.4s ease-in-out;
+  -webkit-transition: All 0.4s ease-in-out;
+  -moz-transition: All 0.4s ease-in-out;
+  -o-transition: All 0.4s ease-in-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003161}}
+.ellipse .ellipse_fir, .ellipse .ellipse_sec, .ellipse .ellipse_third, .ellipse .ellipse_fouth, .case_content ul li a, .advantage_all ul li, .company_msg .company_introduce p:nth-of-type(1) button, .liuyan form p input {
+  border-raidus: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/predefined_variables\.scss}line{font-family:\00003168}}
+.case_content ul li a .magnifier {
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\000033}}
+.head_top {
+  width: 100%;
+  background: url(../imgs/wenli_fir.png) repeat-x;
+  height: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\000038}}
+.top_main {
+  width: 1000px;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000317}}
+  .top_main .top_left, .top_main .top_right {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000324}}
+  .top_main .top_right {
+    text-align: right;
+    font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000329}}
+nav {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1000px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto
+  /* ul li a span{
+  	@include fontWeight;
+  } */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000339}}
+  nav .logo {
+    width: 23%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000347}}
+  nav ul {
+    width: 77%;
+    float: left;
+    height: 91px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000354}}
+  nav ul li {
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    border-right: 1px solid #DAD6D6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000357}}
+    nav ul li:hover {
+      background: #005887; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000360}}
+    nav ul li:hover a {
+      color: #ffffff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000367}}
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    color: #909090; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000377}}
+  nav ul li a p {
+    font-size: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000384}}
+.sangle {
+  text-align: center;
+  width: 100%;
+  content: "";
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 10px solid transparent;
+  border-bottom-color: #ffffff;
+  margin: 0 auto; }
+
+/* slide2背景图片开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000389}}
+.slide_bg_img {
+  width: 100%;
+  height: 237px;
+  margin-top: 91px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\0000396}}
+  .slide_bg_img img {
+    width: 100%;
+    height: 100%; }
+
+/* 公司地主展示开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003102}}
+.company_msg {
+  width: 1000px;
+  overflow: hidden;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto
+  /* 公司信息介绍开始 */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003111}}
+  .company_msg .company_map {
+    width: 700px;
+    float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003114}}
+    .company_msg .company_map iframe {
+      width: 100%;
+      height: 337px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003120}}
+  .company_msg .company_introduce {
+    width: 300px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003124}}
+    .company_msg .company_introduce p:nth-of-type(1) button {
+      line-height: 34px;
+      margin-top: 45px;
+      margin-bottom: 0;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 5px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      background: #005887;
+      color: #ffffff;
+      font-weight: bold;
+      border: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003146}}
+    .company_msg .company_introduce p {
+      color: #848484;
+      line-height: 30px;
+      font-family: Verdana; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003151}}
+    .company_msg .company_introduce p:nth-of-type(2) {
+      margin-top: 15px; }
+
+/* 留言开始 */
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003159}}
+.liuyan {
+  width: 1000px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003167}}
+  .liuyan form {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003169}}
+    .liuyan form p {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003178}}
+      .liuyan form p input {
+        -webkit-box-flex: 1;
+                flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        -o-flex: 1;
+        line-height: 30px;
+        border: 1px solid #ccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003184}}
+      .liuyan form p input:nth-of-type(2) {
+        margin-top: 0;
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003192}}
+      .liuyan form p textarea {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        border: 1px solid #ccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/psgw\/style\/content_us\.scss}line{font-family:\00003197}}
+      .liuyan form p #sub {
+        background: #005887;
+        color: #ffffff;
+        border: 0;
+        cursor: pointer; }
+
+/*# sourceMappingURL=content_us.css.map */
